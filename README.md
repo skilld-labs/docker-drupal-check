@@ -5,10 +5,12 @@
 
 ## Docker hub
 
-- https://hub.docker.com/r/skilldlabs/docker-drupal-check/
+- https://hub.docker.com/r/skilldlabs/docker-drupal-check/ (NOT YET)
 
 
 ## How to use
 
-- `cd your_drupal_project`
-- `docker run --rm -v `pwd`:`pwd` -w `pwd` skilldlabs/docker-drupal-check:last drupal-check -ad -vv -n --no-progress web/modules/custom/`
+```
+cd your_drupal_project`
+docker run --rm -v `pwd`:`pwd` -w `pwd` skilldlabs/docker-drupal-check:last drupal-check -ad -vv -n --no-progress web/modules/custom/
+```
