@@ -8,7 +8,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
   org.label-schema.schema-version="1.0" \
   org.label-schema.name="docker-drupal-check" \
   org.label-schema.description="Check Drupal code for deprecations and discover bugs via static analysis - php & mglaman/drupal-check" \
-  org.label-schema.vcs-url="https://github.com/davidferlay/docker-drupal-check" \
+  org.label-schema.vcs-url="https://github.com/skilld-labs/docker-drupal-check" \
   maintainer="David Ferlay <davidferlay@outlook.com>, Andy Postnikov <apostnikov@gmail.com>"
 
 RUN set -e \
