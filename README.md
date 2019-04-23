@@ -5,7 +5,7 @@
 
 ## Docker hub
 
-- https://hub.docker.com/r/skilldlabs/docker-drupal-check/ (NOT YET)
+- https://hub.docker.com/r/skilldlabs/docker-drupal-check/
 
 
 ## How to use
