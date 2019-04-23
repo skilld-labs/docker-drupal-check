@@ -2,6 +2,7 @@ FROM skilldlabs/php:72
 
 ARG BUILD_DATE
 ARG VCS_REF
+ARG DRUPAL_CHECK
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
   org.label-schema.vcs-ref=$VCS_REF \
@@ -11,14 +12,9 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
   org.label-schema.vcs-url="https://github.com/skilld-labs/docker-drupal-check" \
   maintainer="David Ferlay <davidferlay@outlook.com>, Andy Postnikov <apostnikov@gmail.com>"
 
-RUN set -e \
-  && curl -O -L https://github.com/mglaman/drupal-check/releases/latest/download/drupal-check.phar \
-  && mv drupal-check.phar /usr/local/bin/drupal-check \
-  && chmod +x /usr/local/bin/drupal-check
+RUN php -r "copy('https://github.com/mglaman/drupal-check/releases/download/$DRUPAL_CHECK/drupal-check.phar', '/usr/local/bin/drupal-check');" \
+  && chmod +x /usr/local/bin/drupal-check && drupal-check -V
 
-VOLUME /work
-WORKDIR /work
+VOLUME /srv
 
-CMD set -e \
-  && drupal-check --version \
-  && drupal-check --help
+CMD ["drupal-check", "--help"]
