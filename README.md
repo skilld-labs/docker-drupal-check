@@ -7,6 +7,12 @@
 
 - https://hub.docker.com/r/skilldlabs/docker-drupal-check/
 
+## Tags
+
+- 2 tags are available :
+  - latest : based on [skilldlabs/php:72](https://github.com/skilld-labs/docker-php) image
+  - 7.2-cli-alpine : based on [php:7.2-cli-alpine](https://hub.docker.com/_/php) official image
+
 
 ## How to use
 
