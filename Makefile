@@ -1,6 +1,6 @@
 NAME = skilldlabs/docker-drupal-check
 
-TAGS ?= 1.0.9
+TAGS ?= 1.0.11
 
 .PHONY: all build push latest
 
