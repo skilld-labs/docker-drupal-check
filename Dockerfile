@@ -1,4 +1,4 @@
-FROM skilldlabs/php:72
+FROM skilldlabs/php:73
 
 ARG BUILD_DATE
 ARG VCS_REF
